@@ -26,9 +26,15 @@ import (
 
 func main() {
   p, err := path.FromJS(`foo[0].bar["baz"]`)
-  log.Println(p.Components()) // Here, p.Components() should be ["foo", 0, "bar", "baz"].
+
+  // Here, p.Components() should be ["foo", 0, "bar", "baz"].
+  log.Println(p.Components()) 
+
   s := p.ToJS()
-  log.Println(s) // Here, s should be "foo[0].bar.baz". Note that though this is different from the original parsed string, it still will parse back to the same path components.
+
+  // Here, s should be "foo[0].bar.baz". Note that though this is different
+  // from the original parsed string, it still will parse back to the same path components.
+  log.Println(s) 
 }
 ```
 
