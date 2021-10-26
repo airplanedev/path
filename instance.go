@@ -16,7 +16,7 @@ import (
 // slices rather than strings. This helps avoid a class of errors around improperly
 // (de-)escaping path components.
 //
-// Unlike []interface{}, paths are type-safe via the Append* methods.
+// Unlike []interface{}, paths are type-safe via the Str/Int/Path methods.
 //
 // The zero value is safe to use.
 type P struct {
