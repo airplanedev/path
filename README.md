@@ -15,7 +15,7 @@ When using JS path (de-)serialization, each component of the serialized string s
 2. Square-bracket-and-quote-based strings: These should be contained in square brackets and quotes `[""]` (e.g. `a["Test.ing"]`). These can contain any arbitrary characters, though quotes and backslashes should be backslash-escaped (e.g. `a["\""]`).
 3. Integers: These should be contained in square brackets `[]` (e.g. `a[0]`).
 
-```
+```go
 package main
 
 import (
@@ -38,4 +38,4 @@ func main() {
 }
 ```
 
-More examples (particularly unusual edge cases) can be found in (javascript_test.go)[https://github.com/airplanedev/path/blob/main/javascript_test.go].
+More examples (particularly unusual edge cases) can be found in [javascript_test.go](./javascript_test.go).
