@@ -1,4 +1,4 @@
-module github.com/airplanedev/jspath
+module github.com/airplanedev/path
 
 go 1.17
 
