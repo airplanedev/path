@@ -5,7 +5,7 @@ on:
 jobs:
   lsif:
     # this line will prevent forks of this repo from attempting to upload lsif indexes
-    if: github.repository == 'airplanedev/cli'
+    if: github.repository == 'airplanedev/path'
     runs-on: ubuntu-latest
     container: sourcegraph/lsif-go:v1.7.5
     steps:
